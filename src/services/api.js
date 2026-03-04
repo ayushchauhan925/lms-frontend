@@ -1,9 +1,10 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://lms-backend-fvxy.onrender.com"
+  baseURL: "https://lms-backend-fvxy.onrender.com",
   withCredentials: true,
 });
+
 
 // Attach token automatically
 api.interceptors.request.use((config) => {
